@@ -6,22 +6,28 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import "tailwindcss";
 
-@theme{
+@theme {
+    --font-orbitron: 'Orbitron', sans-serif;
+    --font-audiowide: 'Audiowide', cursive;
+    --font-major-mono: 'Major Mono Display', monospace;
+    --font-exo2: 'Exo 2', sans-serif;
+    --font-vt323: 'VT323', monospace;
+}
 
+@layer utilities {
     .font-orbitron {
-        font-family: 'Orbitron', sans-serif;
+        font-family: var(--font-orbitron);
     }
     .font-audiowide {
-        font-family: 'Audiowide', cursive;
+        font-family: var(--font-audiowide);
     }
     .font-major-mono {
-        font-family: 'Major Mono Display', monospace;
+        font-family: var(--font-major-mono);
     }
     .font-exo2 {
-        font-family: 'Exo 2', sans-serif;
+        font-family: var(--font-exo2);
     }
     .font-vt323 {
-        font-family: 'VT323', monospace;
+        font-family: var(--font-vt323);
     }
- 
 }
