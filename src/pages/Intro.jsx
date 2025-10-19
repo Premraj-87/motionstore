@@ -6,10 +6,7 @@ import Navbar from "../components/Navbar";
 const Intro = () => {
   return (
     <motion.div
-      className="relative flex items-center justify-center text-white rounded-2xl overflow-hidden"
-      style={{
-        height: 'calc(100vh - 1.5rem*2)',
-      }}
+      className="relative flex items-center justify-center text-white rounded-2xl overflow-hidden min-h-screen py-8"
       animate={{
         background: [
           "linear-gradient(49deg, rgba(13, 10, 10, 1) 22%, rgba(222, 74, 0, 1) 47%, rgba(41, 29, 25, 1) 90%)",
@@ -23,12 +20,12 @@ const Intro = () => {
       }}
     >
       {/* Navbar - Inside Intro */}
-      <div className="absolute top-5 left-2 right-2 z-20">
+      <div className="absolute top-4 left-2 right-2 z-20">
         <Navbar />
       </div>
 
       {/* Main Content - Centered */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full pt-16 sm:pt-20 md:pt-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           {/* Left: Text Content */}
@@ -43,7 +40,7 @@ const Intro = () => {
             {/* Main Heading with letter animation */}
             <div className="overflow-hidden">
               <motion.h1
-                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-orbitron font-bold leading-tight"
+                className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-orbitron font-bold leading-tight"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8, type: "spring", stiffness: 80 }}
@@ -129,7 +126,7 @@ const Intro = () => {
                 loop 
                 muted 
                 playsInline
-                className="w-full h-[400px] md:h-[450px] object-cover"
+                className="w-full h-48 sm:h-64 md:h-80 lg:h-[380px] object-cover"
               >
                 <source src={Gifanimation} type="video/mp4" />
               </video>
