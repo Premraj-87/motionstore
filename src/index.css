@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import "tailwindcss";
+
+@theme{
+
+    .font-orbitron {
+        font-family: 'Orbitron', sans-serif;
+    }
+    .font-audiowide {
+        font-family: 'Audiowide', cursive;
+    }
+    .font-major-mono {
+        font-family: 'Major Mono Display', monospace;
+    }
+    .font-exo2 {
+        font-family: 'Exo 2', sans-serif;
+    }
+    .font-vt323 {
+        font-family: 'VT323', monospace;
+    }
+ 
+}
